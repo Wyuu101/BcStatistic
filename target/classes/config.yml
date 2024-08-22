@@ -1,0 +1,41 @@
+#config.yml
+
+
+#  To use this plugin, your server must have the Placeholder plugin version 2.10.8 or above installed and enabled with BC (BungeeCord) support. Additionally, ensure that Bungee placeholders can be resolved correctly.
+#
+#  You can register placeholders for sub-server player counts within the configuration file.
+#
+#  The plugin supports hot reloading, but it may not solve all issues. If hot reloading fails, it's recommended to restart the server to reload it.
+#
+#
+#  Servers1 is a custom key, and you can create multiple keys.
+#  "name" is a custom placeholder name (for example, if set to BedWar, then the created placeholder will be %bcstatic_BedWar%).
+#  "minValue" is the default minimum player count. If set to 1, the placeholder returns 1 when the server has no players.
+#  "elements" are the servers for which the placeholder needs to gather statistics. The final player count is the total count across these servers. Ensure to input the names of each server as set in BC.
+
+#===================================================================================================
+
+#使用本插件需要服务器提前安装2.10.8版本以上的PlaceHolder插件并启用BC，同时确保Bungee占位符能够被正常解析。
+
+#配置文件内可以自行注册BC服务器部分子服人数统计占位符
+
+#插件支持热重载，但热重载不能保证解决全部问题，如遇重载失败，建议重启服务器以重新加载。
+
+
+#例子：
+#Servers1为自定义键，可以创建多个
+#name为自定义占位符名称（比如设置为BedWar,那么你创建的占位符就是%bcstatic_BedWar%
+#minValue为默认最低人数，如果为1，那么服务器没人时占位符返回1
+#elements为需要占位符去统计的服务器，最终的人数值就是这些服务器的总人数，需注意这里要填每个服务器在BC里设置的名称
+
+
+
+
+
+
+StatisticServers:
+  Servers1:
+    name: ""
+    minValue: 0
+    elements:
+      - ""

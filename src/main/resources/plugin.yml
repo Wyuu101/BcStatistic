@@ -1,0 +1,9 @@
+name: BcStatistic
+version: '${project.version}'
+main: com.bcstatistic.BcStatistic
+authors: [X_32mx]
+description: A placeholder extension plugin for BC
+commands:
+  bcstatistic:
+    description: "[BcStatistic]Command"
+    permission: BcStatistic.Main
